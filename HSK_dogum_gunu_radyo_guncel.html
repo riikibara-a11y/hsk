@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17102f">
+<title>HSK'ye — İyi ki Doğdun ✨</title>
+<style>
+:root{--bg:#120d27;--panel:#21183d;--panel2:#2d2051;--lilac:#c9a8ff;--pink:#ffb8df;--text:#fff8ff;--muted:#d8c9ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#49316f 0%,#1b1435 43%,#100b20 100%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+button,textarea{font:inherit}button{cursor:pointer}.stars,.stars:before,.stars:after{position:fixed;inset:0;pointer-events:none;content:"";background-image:radial-gradient(2px 2px at 20px 30px,#fff 60%,transparent),radial-gradient(1px 1px at 90px 120px,#e9d9ff 60%,transparent),radial-gradient(2px 2px at 170px 80px,#fff 60%,transparent),radial-gradient(1px 1px at 240px 190px,#d9baff 60%,transparent);background-size:280px 230px;opacity:.42;z-index:0}.stars:before{transform:translate(90px,70px);opacity:.5}.stars:after{transform:translate(160px,130px);opacity:.35}
+main{position:relative;z-index:1}.hero{min-height:94vh;display:grid;place-items:center;text-align:center;padding:70px 20px 45px}.hero-inner{max-width:760px}.eyebrow{letter-spacing:.22em;text-transform:uppercase;color:#d7baff;font-size:.76rem}.moon{font-size:3rem;filter:drop-shadow(0 0 18px #d6aaff);margin:12px}.hero h1{font-size:clamp(3.4rem,12vw,7.5rem);line-height:.95;margin:12px 0;background:linear-gradient(120deg,#fff,#d9baff 45%,#ffbce7);-webkit-background-clip:text;color:transparent;text-shadow:0 8px 45px #b58aff30}.hero p{font-size:1.1rem;color:var(--muted);max-width:560px;margin:22px auto 28px;line-height:1.8}.primary,.secondary{border:0;border-radius:999px;padding:13px 23px;color:#25143f;background:linear-gradient(120deg,#e0caff,#ffcae9);font-weight:750;box-shadow:0 8px 28px #d4a8ff35;transition:.2s}.primary:hover,.secondary:hover{transform:translateY(-3px);box-shadow:0 12px 34px #d4a8ff55}.scroll{display:block;margin-top:42px;color:#c7b4e3;font-size:.85rem}
+section{width:min(1000px,calc(100% - 32px));margin:0 auto 34px;padding:clamp(22px,5vw,42px);border:1px solid #b99be52b;border-radius:28px;background:linear-gradient(145deg,#2b2049d9,#1b1533ef);box-shadow:0 20px 70px #05030d55;backdrop-filter:blur(12px)}
+.section-tag{color:#d8baff;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase}h2{font-size:clamp(1.8rem,5vw,2.6rem);margin:8px 0 12px}.lead{color:var(--muted);line-height:1.7;margin-top:0}.game-stack{display:grid;grid-template-columns:1fr;gap:22px}.game-card{padding:clamp(16px,3vw,28px);border-radius:22px;background:#ffffff09;border:1px solid #d7baff35}.game-card h3{font-size:1.4rem;margin:0 0 8px}.game-card p{color:var(--muted);line-height:1.6}.game-area{width:100%;min-height:270px;margin-top:18px;border-radius:18px;background:#120d27a8;border:1px dashed #bda0e85a;padding:18px;text-align:center}.balloon-field{width:100%;height:clamp(330px,52vw,470px);position:relative;overflow:hidden;border-radius:15px;background:radial-gradient(ellipse at 50% 100%,#49316c88,transparent 70%)}.balloon{position:absolute;border:0;background:transparent;font-size:clamp(2.4rem,5vw,3.5rem);padding:0;line-height:1;filter:drop-shadow(0 5px 8px #0005);animation:rise var(--dur,3s) linear forwards}.balloon:hover{transform:scale(1.15)}@keyframes rise{from{transform:translateY(35px) rotate(-8deg)}50%{margin-left:18px}to{transform:translateY(-400px) rotate(12deg);opacity:.7}}.scorebar{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:12px;color:var(--muted)}.scorebar b{color:#ffcae9}.targets{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin:12px 0}.target{padding:8px 13px;border-radius:999px;background:#ffffff0d;border:1px solid #b99be544;font-size:.88rem}.target.active{background:#8e67bd;border-color:#e4caff;color:white;box-shadow:0 0 18px #bd8fff55}.memory-board{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:clamp(4px,1vw,9px);width:100%;max-width:760px;margin:18px auto}.memory-tile{aspect-ratio:1;min-width:0;border:1px solid #c7a4f65c;border-radius:clamp(5px,1vw,12px);background:linear-gradient(145deg,#513879,#30214f);color:white;font-size:clamp(.8rem,2.6vw,1.65rem);display:grid;place-items:center;transition:transform .15s,background .15s;padding:0}.memory-tile:active{transform:scale(.94)}.memory-tile.matched{background:#7656a5;border-color:#f0d5ff;box-shadow:0 0 12px #c49bff45}.gift{font-size:4.5rem;border:0;background:none;filter:drop-shadow(0 8px 18px #c28cff65);transition:.25s}.gift:hover{transform:rotate(-8deg) scale(1.08)}.message{padding:22px;border-radius:18px;background:linear-gradient(120deg,#9e75d5,#7656aa);color:white;line-height:1.8;font-size:1.05rem}.secret{display:none;margin-top:18px;padding:20px;border-radius:18px;background:#ffffff10;border:1px solid #e5caff55;line-height:1.8;color:#ffe5f5}.wish-form{display:grid;gap:13px;margin-top:18px}.wish-form textarea{width:100%;min-height:135px;resize:vertical;border:1px solid #c6a6ee66;border-radius:16px;background:#120d27;color:white;padding:16px;outline:none}.wish-form textarea:focus{border-color:#e6c9ff;box-shadow:0 0 0 3px #c99dff22}.wish-form textarea::placeholder{color:#b9a6d2}.small{font-size:.84rem;color:#cbbbe2;line-height:1.55}.toast{color:#ffcae9;font-weight:700;margin-top:8px;min-height:24px}.confetti{position:fixed;top:-20px;width:9px;height:14px;z-index:20;pointer-events:none;animation:fall 3.5s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.2}}.footer{text-align:center;padding:50px 20px 70px;color:#bcaad7}.footer b{color:#f6c7eb}
+@media(max-width:520px){section{width:calc(100% - 20px);padding:19px}.memory-board{gap:4px}.memory-tile{border-radius:5px}.game-area{padding:10px}.balloon-field{height:360px}.music-volume{left:10px;right:10px;bottom:10px;justify-content:center;border-radius:16px}.music-volume input{width:65px}}
+
+/* Yeni oyunlar, ses sistemi ve radyo */
+.audio-panel{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;margin:18px 0;padding:14px;border:1px solid #d7baff35;border-radius:16px;background:#ffffff09}
+.audio-panel button,.game-controls button{border:1px solid #c9a8ff66;border-radius:999px;background:#513879;color:white;padding:9px 15px}
+.audio-panel input{accent-color:#d9baff;width:min(180px,45vw)}
+.canvas-wrap{width:100%;max-width:620px;margin:14px auto 8px}
+.arcade-canvas{display:block;width:100%;height:auto;border-radius:14px;background:#100b20;border:1px solid #bda0e85a;touch-action:pan-y}
+.game-controls{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:12px auto}
+.game-controls button{min-width:48px;font-weight:700}
+.game-status{min-height:24px;color:#ffcae9;font-weight:700;margin:8px}
+.music-volume{position:fixed;right:14px;bottom:14px;z-index:30;display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:10px 13px;border:1px solid #d7baff66;border-radius:20px;background:#21183df2;box-shadow:0 8px 28px #0006;max-width:calc(100vw - 28px)}.music-volume input{width:85px;accent-color:#d9baff}.music-volume button{border:1px solid #d7baff88;border-radius:999px;background:#513879;color:white;padding:7px 11px;font-weight:700;white-space:nowrap}.radio-info{display:grid;gap:2px;min-width:92px}.radio-info strong{font-size:.78rem;color:#fff}.radio-info span{font-size:.68rem;color:#d8c9ef}.wish-preview{display:none;margin-top:14px;padding:16px;border-radius:14px;background:#ffffff10;border:1px solid #d7baff55;color:#fff;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}
+
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<main>
+<header class="hero"><div class="hero-inner">
+ <div class="eyebrow">✦ hiranur sena karcı ✦</div><div class="moon">💫</div>
+ <h1>İyi ki<br>Sen</h1>
+ <p>Senin için küçük oyunlar hazırladım. 💜</p>
+ <button class="primary" onclick="document.querySelector('#oyunlar').scrollIntoView({behavior:'smooth'})">Oyunlara göz at ✨</button><span class="scroll">Aşağı doğru keşfet ↓</span>
+</div></header>
+<section id="mesaj"><div class="section-tag">✦✦✦✦✦ </div><h2>Bugün yıldızlar söndü çünkü Zeki Arkun doğdu.</h2><p class="lead">Pardon pardon... Hiranur Sena Karcı doğdu.</p><div class="message">“İyi ki varsın! Yeni yaşında dilediğin güzellikler birer birer gerçek olsun. Her zaman yüzünü güldüren insanlar ve kalbini ısıtan anlar yanında olsun. Bugün bol bol gül, eğlen ve kendini şımart. Nice mutlu yaşlara! 💜”</div></section>
+
+<section id="oyunlar"><div class="section-tag">✦ Hiragül ve oyun arkadaşları ✦</div><h2>Mini (Batu) Oyun Köşesi 🎮</h2><p class="lead">Kafana göre takıl, bazıları zor gelebilir.</p>
+<div class="game-stack">
+ <article class="game-card"><h3>🎈 Balon Vibe</h3><p>30 saniyede uçuşan balonları yakala. Bakalım kaç tanesini kaçırmadan toplayabileceksin?</p>
+  <div class="game-area"><div class="scorebar"><span>Süre: <b id="time">30</b>s</span><span>Puan: <b id="score">0</b></span><span>Rekor: <b id="best">0</b></span></div><div class="targets"><span class="target" id="t10">10 · 🐄 İnek</span><span class="target" id="t20">20 · 🐿️ Sincap</span><span class="target" id="t30">30 · 🧑🏽 Çingene Arda</span></div><div class="balloon-field" id="balloonField"><span class="small">Başlata basınca balonlar falan uçacak onlara tıkla bu baya kolay ha</span></div><button class="primary" id="startBalloons" onclick="startBalloons()">Oyunu başlat</button><div class="toast" id="balloonResult"></div></div>
+ </article>
+ <article class="game-card"><h3>⭐ Yıldız Eşleştirme (Crush)</h3><p>64 kartın içinde 32 çift (Jisung ve Minho) gizli. Aynı sembolleri bulmaya çalış. Az hamleyle bitirirsen unvanın da ona göre değişir. ✨</p>
+  <div class="game-area"><div class="scorebar"><span>Hamle: <b id="moves">0</b></span><span>Eşleşme: <b id="pairs">0</b>/32</span><span>Unvan: <b id="memoryRank">—</b></span></div><div id="memoryGame" class="memory-board"></div><button class="secondary" onclick="newMemory()">Yeniden karıştır</button><div class="toast" id="memoryResult"></div></div>
+ </article>
+
+  <article class="game-card"><h3>🐍 Karma: Özlem Avı</h3><p>Solucanı yön tuşlarıyla hareket ettir; elma, mango, çilek ve vişneleri topla. Her meyvenin puanı ve büyüme miktarı farklı. Beş dakika içinde olabildiğince yüksek puana ulaş.</p>
+   <div class="game-area"><div class="scorebar"><span>Süre: <b id="snakeTime">05:00</b></span><span>Puan: <b id="snakeScore">0</b></span><span>Rekor: <b id="snakeBest">0</b></span><span>Unvan: <b id="snakeRank">—</b></span></div><div class="canvas-wrap"><canvas id="snakeCanvas" class="arcade-canvas" width="480" height="360" aria-label="Solucan oyunu alanı"></canvas></div><button class="primary" id="snakeStart">Oyunu başlat</button><div class="game-controls"><button data-snake="up">▲</button><button data-snake="left">◀</button><button data-snake="down">▼</button><button data-snake="right">▶</button></div><div class="game-status" id="snakeStatus">Meyveleri topla, beş dakika içinde rekor kır. Rekor kırarsan erikli soda hediye!!! Bu biraz zor haberin olsun. 🍎</div></div>
+  </article>
+  <article class="game-card"><h3>🧱 Perma Kırıcı</h3><p>Üç bölüm boyunca topu platformla sektirip tuğlaları temizle. Her bölümde süre ve zorluk artar; güçlendirmeleri yakala, semihi oyunda tut ve final bölümünü tamamla. Bu da biraz zor haberin olsun CNM</p>
+   <div class="game-area"><div class="scorebar"><span>Bölüm: <b id="brickLevel">1/3</b></span><span>Süre: <b id="brickTime">03:00</b></span><span>Puan: <b id="brickScore">0</b></span><span>Can: <b id="brickLives">3</b></span></div><div class="canvas-wrap"><canvas id="brickCanvas" class="arcade-canvas" width="480" height="360" aria-label="Tuğla kırma oyunu alanı"></canvas></div><button class="primary" id="brickStart">Oyunu başlat</button><div class="game-controls"><button id="brickLeft">◀</button><button id="brickRight">▶</button></div><div class="game-status" id="brickStatus">İlk bölüm: Platformu kullan ve tuğlaları parçala ✨</div></div>
+  </article>
+  <article class="game-card"><h3>🏃 Radikal Parkur (Saddam Versiyon)</h3><p>Üç şeritli parkurda yıldızları topla, engellerden zıplayarak ya da şerit değiştirerek kaç. Parkur 5. seviyeden başlar; her 40 saniyede tempo biraz daha yükselir ve 9. seviyede final yapar ama sınav olan değil. He bu da kolay haberin olsun.</p>
+   <div class="game-area"><div class="scorebar"><span>Süre: <b id="runTime">03:20</b></span><span>Seviye: <b id="runLevel">5/9</b></span><span>Puan: <b id="runScore">0</b></span><span>Unvan: <b id="runRank">—</b></span></div><div class="canvas-wrap"><canvas id="runnerCanvas" class="arcade-canvas" width="480" height="360" aria-label="Parkur oyunu alanı"></canvas></div><button class="primary" id="runnerStart">Parkuru başlat</button><div class="game-controls"><button id="runLeft">◀</button><button id="runJump">⬆ Zıpla</button><button id="runRight">▶</button></div><div class="game-status" id="runnerStatus">Engellere dikkat aman ha</div></div>
+  </article>
+</div></section>
+
+
+<div class="music-volume" aria-label="Radyo ve arka plan müziği">
+  <span aria-hidden="true">📻</span>
+  <div class="radio-info"><strong id="radioTitle">Radyo · Şarkı 1</strong><span id="radioState">Şimdi çalıyor</span></div>
+  <button type="button" id="radioChange" aria-label="Rastgele başka şarkı çal">Değiştir ↻</button>
+  <label class="small" for="radioVolume">Ses</label>
+  <input id="radioVolume" type="range" min="0" max="1" step="0.01" value="0.35" aria-label="Müzik ses seviyesi">
+</div><audio id="lobbyAudio" preload="auto" autoplay></audio>
+<section id="hediye"><div class="section-tag">✦ sana özel bir sürpriz</div><h2>Hediye kutusunu aç 🎁</h2><p class="lead">Kutunun içinde küçük bir not saklı. Açmak için dokun!</p><div style="text-align:center;padding:15px"><button class="gift" id="giftButton" onclick="openGift()" aria-label="Hediye kutusunu aç">🎁</button><div class="small">Kutucuğa dokun</div><div class="secret" id="giftNote">✨ Sürpriz! Bu kutunun içindeki en güzel şey, senin gibi özel birine ait olması. Bugün tüm güzellikler seni bulsun. İyi ki doğdun HSK! 💜</div></div></section>
+
+<section id="dilek"><div class="section-tag">✦ son bir dilek</div><h2>Bir dilek tut! 🕯️</h2><p class="lead">Yeni yaşın için bir dilek yaz. Belki de bu dilek yıldızlara ulaşır. 🌟</p>
+<form class="wish-form" id="wishForm"><textarea id="wishText" maxlength="1000" placeholder="Yeni yaşımda en çok istediğim şey... 💜" required></textarea><button class="primary" type="submit" id="wishButton">Dileğimi gönder ✨</button><div class="toast" id="wishResult" role="status"></div></form>
+<div class="wish-preview" id="wishPreview"></div><p class="small" id="wishHint">Şu an dileğin yalnızca bu sayfada görüntülenir; e-postana gelmesi için bağlantı eklenmeli. 1) formspree.io sitesinde ücretsiz hesap aç. 2) New Form oluşturup e-posta adresini doğrula. 3) Sana verilen https://formspree.io/f/... bağlantısını HTML kodunda FORM_ENDPOINT yazan boş tırnakların arasına yapıştır. Örnek: const FORM_ENDPOINT = "https://formspree.io/f/abcdwxyz"; 4) Dosyayı kaydet ve yeniden yükle. Bundan sonra dilekler formu oluştururken doğruladığın e-postaya gelir.</p>
+</section>
+<footer class="footer">🧊 Senin için buzla beraber hazırlandı. <b>🧊</b> </footer>
+</main>
+<script>
+// Dilek formu varsayılan olarak yalnızca ekranda gösterilir. E-posta gönderimi için Formspree endpoint'ini buraya ekle: const FORM_ENDPOINT = "https://formspree.io/f/FORM_KODUN";
+const FORM_ENDPOINT = "";
+let balloonTimer=null,spawnTimer=null,score=0,timeLeft=30,playing=false,spawnDelay=650,balloonStartedAt=0;
+function scheduleBalloon(){if(!playing)return;const elapsed=(Date.now()-balloonStartedAt)/1000;const phase=Math.floor(elapsed/7.5);spawnDelay=Math.max(300,650-phase*100);spawnTimer=setTimeout(()=>{if(!playing)return;spawnBalloon();scheduleBalloon();},spawnDelay)}
+function startBalloons(){if(playing)return;playing=true;score=0;timeLeft=30;spawnDelay=650;balloonStartedAt=Date.now();document.getElementById('score').textContent=0;document.getElementById('time').textContent=30;document.getElementById('balloonResult').textContent='Hazır ol, balonlar geliyor valla';const field=document.getElementById('balloonField');field.innerHTML='';document.getElementById('startBalloons').disabled=true;spawnBalloon();scheduleBalloon();balloonTimer=setInterval(()=>{timeLeft--;document.getElementById('time').textContent=timeLeft;if(timeLeft<=0){clearInterval(balloonTimer);clearTimeout(spawnTimer);playing=false;field.innerHTML='<span class="small">Oyun Tamamlandı 🎉</span>';document.getElementById('startBalloons').disabled=false;const rank=score>=30?'Usta 🧑🏽':score>=20?'Sincap 🐿️':score>=10?'İnek 🐄':'Biraz daha pratik yap benca 💫';document.getElementById('balloonResult').textContent=score+' balon yakaladın. '+rank;confettiIf(score>=20)}},1000)}
+function spawnBalloon(){if(!playing)return;const field=document.getElementById('balloonField');const b=document.createElement('button');b.className='balloon';b.textContent=['🎈','💜','⭐','🩷','🎈'][Math.floor(Math.random()*5)];b.style.left=(2+Math.random()*88)+'%';b.style.top=(70+Math.random()*25)+'%';b.style.setProperty('--dur',(2.1+Math.random()*1.2)+'s');b.setAttribute('aria-label','Balonu yakala');b.onclick=()=>{if(!playing)return;score++;document.getElementById('score').textContent=score;document.getElementById('t10').classList.toggle('active',score>=10&&score<20);document.getElementById('t20').classList.toggle('active',score>=20&&score<30);document.getElementById('t30').classList.toggle('active',score>=30);b.remove()};field.appendChild(b);setTimeout(()=>b.remove(),3500)}
+const symbols=['🌙','⭐','💜','🎂','🎁','🦋','🌸','🍓','🍒','🪻','🧁','🐻','🐱','🐰','🍀','🌈','☁️','🪐','💎','🧸','🍬','🍭','🦄','🐣','🌷','🍉','🍇','🫧','💫','🎀','🩷','☀️'];let first=null,lock=false,matches=0,moves=0;
+function newMemory(){const game=document.getElementById('memoryGame');game.innerHTML='';first=null;lock=false;matches=0;moves=0;document.getElementById('moves').textContent=0;document.getElementById('pairs').textContent='0';document.getElementById('memoryRank').textContent='—';document.getElementById('memoryResult').textContent='';[...symbols,...symbols].sort(()=>Math.random()-.5).forEach(s=>{const b=document.createElement('button');b.className='memory-tile';b.textContent='✦';b.dataset.symbol=s;b.setAttribute('aria-label','Kapalı kart');b.onclick=()=>flip(b);game.appendChild(b)})}
+function flip(b){if(lock||b.dataset.done||b===first||b.textContent!=='✦')return;b.textContent=b.dataset.symbol;b.setAttribute('aria-label',b.dataset.symbol);if(!first){first=b;return}moves++;document.getElementById('moves').textContent=moves;if(first.dataset.symbol===b.dataset.symbol){first.dataset.done='1';b.dataset.done='1';first.classList.add('matched');b.classList.add('matched');first=null;matches++;document.getElementById('pairs').textContent=matches;if(matches===32){const rank=moves>=50&&moves<100?'Prof. Sincap':moves>=100&&moves<150?'Doç. Sincap':moves>=150&&moves<=200?'Cemile Sincap':'';document.getElementById('memoryRank').textContent=rank||'—';document.getElementById('memoryResult').textContent='64 kartın hepsini '+moves+' hamlede eşleştirdin. '+(rank?rank+'!':'Harika bir tur helal olsun')+' 🎉';confetti()}}else{lock=true;const prev=first;first=null;setTimeout(()=>{prev.textContent='✦';b.textContent='✦';prev.setAttribute('aria-label','Kapalı kart');b.setAttribute('aria-label','Kapalı kart');lock=false},850)}}
+function openGift(){document.getElementById('giftButton').textContent='💝';document.getElementById('giftNote').style.display='block';confetti()}
+function confetti(){for(let i=0;i<85;i++){const c=document.createElement('i');c.className='confetti';c.style.left=Math.random()*100+'vw';c.style.background=['#e5c7ff','#ffbce7','#fff1a8','#b6e6ff'][i%4];c.style.animationDelay=Math.random()*.9+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),4500)}}
+function confettiIf(ok){if(ok)confetti()}
+document.getElementById('wishForm').addEventListener('submit',async e=>{
+ e.preventDefault();const wish=document.getElementById('wishText').value.trim(),result=document.getElementById('wishResult'),button=document.getElementById('wishButton');
+ if(!wish){result.textContent='Önce dileğini yazmalısın. 💜';return;}
+ if(FORM_ENDPOINT){button.disabled=true;result.textContent='Dileğin gönderiliyor...';try{const r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},body:JSON.stringify({wish})});if(!r.ok)throw new Error('send');result.textContent='Dileğin site sahibine gönderildi! 💌';document.getElementById('wishText').value='';playSfx('success');}catch(err){result.textContent='Gönderilemedi. Formspree bağlantısını kontrol et.';}finally{button.disabled=false;}return;}
+ const preview=document.getElementById('wishPreview');preview.style.display='block';preview.textContent='✨ Dileğin burada saklı:\n\n'+wish;
+ result.textContent='Dileğin bu sayfada gösterildi. E-posta gönderimi için Formspree bağlantısı eklenmeli.';playSfx('success');
+});
+
+let soundCtx=null;
+function playSfx(kind='click'){try{const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;soundCtx=soundCtx||new AC();if(soundCtx.state==='suspended')soundCtx.resume();const t=soundCtx.currentTime,o=soundCtx.createOscillator(),g=soundCtx.createGain();const f={click:620,good:880,bad:170,hit:260,eat:1040,success:660}[kind]||620;o.type=kind==='hit'?'square':'sine';o.frequency.setValueAtTime(f,t);if(kind==='success')o.frequency.setValueAtTime(1100,t+.13);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.1,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+.18);o.connect(g);g.connect(soundCtx.destination);o.start(t);o.stop(t+.2);}catch(e){}}
+document.addEventListener('click',e=>{if(e.target.closest('button'))playSfx('click')});
+// MP3 dosyalarını HTML dosyasının yanındaki songs klasörüne koy.
+// Yeni şarkı eklemek için diziye 'songs/sarki8.mp3' gibi yeni bir satır eklemen yeterli.
+const radioTracks=['songs/sarki1.mp3','songs/sarki2.mp3','songs/sarki3.mp3','songs/sarki4.mp3','songs/sarki5.mp3','songs/sarki6.mp3','songs/sarki7.mp3'];
+let radioIndex=0;
+const lobbyAudio=document.getElementById('lobbyAudio');
+const radioTitle=document.getElementById('radioTitle');
+const radioState=document.getElementById('radioState');
+function updateRadioLabel(){
+  radioTitle.textContent='Radyo · Şarkı '+(radioIndex+1);
+  radioState.textContent=lobbyAudio.paused?'Duraklatıldı':'Şimdi çalıyor';
+}
+function playRadioTrack(index, shouldPlay=true){
+  radioIndex=index;
+  lobbyAudio.src=radioTracks[radioIndex];
+  updateRadioLabel();
+  if(shouldPlay){
+    lobbyAudio.play().then(updateRadioLabel).catch(()=>{radioState.textContent='Çalmak için dokun';});
+  }
+}
+function changeRadioTrack(){
+  if(radioTracks.length<2)return;
+  let nextIndex;
+  do{nextIndex=Math.floor(Math.random()*radioTracks.length);}while(nextIndex===radioIndex);
+  playRadioTrack(nextIndex);
+}
+lobbyAudio.volume=.35;
+playRadioTrack(radioIndex,false);
+document.getElementById('radioVolume').oninput=e=>lobbyAudio.volume=Number(e.target.value);
+document.getElementById('radioChange').addEventListener('click',changeRadioTrack);
+lobbyAudio.addEventListener('ended',()=>{playRadioTrack((radioIndex+1)%radioTracks.length);});
+lobbyAudio.addEventListener('play',updateRadioLabel);
+lobbyAudio.addEventListener('pause',updateRadioLabel);
+// Sayfa açılır açılmaz çalmayı dener. Tarayıcıların otomatik ses politikası bunu engelleyebilir.
+window.addEventListener('load',()=>{lobbyAudio.play().then(updateRadioLabel).catch(()=>{radioState.textContent='Çalmak için dokun';});});
+const resumeMusic=()=>{if(lobbyAudio.paused)lobbyAudio.play().then(updateRadioLabel).catch(()=>{});document.removeEventListener('pointerdown',resumeMusic);document.removeEventListener('keydown',resumeMusic);};
+document.addEventListener('pointerdown',resumeMusic);document.addEventListener('keydown',resumeMusic);
+(()=>{
+ const c=document.getElementById('snakeCanvas'),x=c.getContext('2d'),cell=20;
+ let body,dir,next,food,timer=null,clockTimer=null,score=0,seconds=300,active=false,foodType='🍎';
+ const foods=[{emoji:'🍎',chance:.60,grow:1,points:10},{emoji:'🥭',chance:.25,grow:2,points:20},{emoji:'🍓',chance:.10,grow:3,points:30},{emoji:'🍒',chance:.05,grow:5,points:50}];
+ function chooseFood(){const r=Math.random();let total=0;for(const f of foods){total+=f.chance;if(r<total)return f;}return foods[0];}
+ function placeFood(){let f=chooseFood();foodType=f.emoji;do{food={x:Math.floor(Math.random()*24),y:Math.floor(Math.random()*18),...f}}while(body.some(p=>p.x===food.x&&p.y===food.y));}
+ function draw(){x.fillStyle='#100b20';x.fillRect(0,0,480,360);x.font='20px sans-serif';x.fillText(foodType,food.x*cell,food.y*cell+18);body.forEach((p,i)=>{x.fillStyle=i?'#9d79ce':'#ffb8df';x.fillRect(p.x*cell+2,p.y*cell+2,16,16);});}
+ function showClock(){document.getElementById('snakeTime').textContent=String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0');}
+ function rank(){return score>=750?'Suzy':score>=500?'Kai':score>=300?'Han':score>=200?'Ağrılı04':score>=100?'Pibble':'—';}
+ function reset(){body=[{x:8,y:9},{x:7,y:9},{x:6,y:9}];dir={x:1,y:0};next={...dir};score=0;seconds=300;placeFood();document.getElementById('snakeScore').textContent=0;document.getElementById('snakeRank').textContent='—';showClock();draw();}
+ function end(msg){clearInterval(timer);clearInterval(clockTimer);timer=clockTimer=null;active=false;const title=rank();document.getElementById('snakeRank').textContent=title;document.getElementById('snakeStatus').textContent=msg+' Puanın: '+score+(title!=='—'?' · '+title:'');document.getElementById('snakeBest').textContent=Math.max(Number(document.getElementById('snakeBest').textContent)||0,score);playSfx('bad');}
+ function tick(){dir=next;let h={x:(body[0].x+dir.x+24)%24,y:(body[0].y+dir.y+18)%18};const eating=h.x===food.x&&h.y===food.y;const collisionBody=eating?body:body.slice(0,-1);if(collisionBody.some(p=>p.x===h.x&&p.y===h.y)){end('Enes Batur Kaza');return;}body.unshift(h);if(eating){score+=food.points;document.getElementById('snakeScore').textContent=score;document.getElementById('snakeRank').textContent=rank();playSfx('eat');for(let i=1;i<food.grow;i++)body.push({...body[body.length-1]});placeFood();}else body.pop();draw();}
+ function turn(d){if(d.x!==-dir.x||d.y!==-dir.y)next=d;}
+ const dirs={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}};
+ document.querySelectorAll('[data-snake]').forEach(b=>b.onclick=()=>turn(dirs[b.dataset.snake]));
+ document.addEventListener('keydown',e=>{if(e.target&&['TEXTAREA','INPUT'].includes(e.target.tagName))return;const m={ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right'};if(m[e.key])turn(dirs[m[e.key]]);});
+ document.getElementById('snakeStart').onclick=()=>{clearInterval(timer);clearInterval(clockTimer);reset();active=true;timer=setInterval(tick,125);clockTimer=setInterval(()=>{seconds--;showClock();if(seconds<=0)end('Beş Dakika Doldu Sincap');},1000);document.getElementById('snakeStatus').textContent='Meyveleri topla lütfen yoksa ben nasıl mango yerim?!';};reset();
+})();;
+(()=>{
+ const c=document.getElementById('brickCanvas'),x=c.getContext('2d');
+ let balls=[],paddle=195,bricks=[],score=0,lives=3,run=false,left=false,right=false,raf,elapsed=0,lastStamp=0,powerups=[],level=1,levelElapsed=0,levelDuration=180;
+ const durations=[180,300,420];
+ let effects={};
+ function clock(){const remain=Math.max(0,levelDuration-Math.floor(levelElapsed));document.getElementById('brickTime').textContent=String(Math.floor(remain/60)).padStart(2,'0')+':'+String(remain%60).padStart(2,'0');document.getElementById('brickLevel').textContent=level+'/3';}
+ function setupStage(n){level=n;levelElapsed=0;levelDuration=durations[n-1];effects={};powerups=[];if(n===3)lives=5;const paddleW=[90,72,56][n-1];paddle=240-paddleW/2;balls=[{x:240,y:292,dx:1.7+n*.15,dy:-2.0-n*.18,r:7}];bricks=[];const rows=[4,5,6][n-1],cols=[7,8,9][n-1],bw=[55,48,41][n-1],gap=5,total=cols*(bw+gap)-gap,leftEdge=(480-total)/2;for(let r=0;r<rows;r++)for(let k=0;k<cols;k++)bricks.push({x:leftEdge+k*(bw+gap),y:34+r*([27,25,22][n-1]),w:bw,h:[17,15,13][n-1],on:true,hp:n===3&&r<2?2:1});clock();labels();draw();}
+ function labels(){document.getElementById('brickScore').textContent=score;document.getElementById('brickLives').textContent=lives;}
+ function paddleWidth(){return effects.wide?125:[90,72,56][level-1];}
+ function draw(){x.fillStyle='#100b20';x.fillRect(0,0,480,360);bricks.forEach((b,i)=>{if(b.on){x.fillStyle=b.hp>1?'#fff0a8':['#c9a8ff','#ffb8df','#9672c8'][Math.min(level-1,2)];x.fillRect(b.x,b.y,b.w,b.h);}});powerups.forEach(p=>{x.fillStyle='#ffe58c';x.beginPath();x.arc(p.x,p.y,10,0,Math.PI*2);x.fill();x.fillStyle='#3a245a';x.font='bold 10px sans-serif';x.textAlign='center';x.fillText(p.kind==='triple'?'3x':p.kind==='wide'?'↔':p.kind==='slow'?'Ⅱ':p.kind==='shield'?'♥':'+',p.x,p.y+4);});balls.forEach(ball=>{x.fillStyle='white';x.beginPath();x.arc(ball.x,ball.y,ball.r,0,Math.PI*2);x.fill();});x.fillStyle='#ffb8df';x.fillRect(paddle,330,paddleWidth(),10);x.textAlign='start';}
+ function finish(msg){run=false;cancelAnimationFrame(raf);document.getElementById('brickStatus').textContent=msg+' Toplam puan: '+score;}
+ function dropPower(b){const choices=level===2?['triple','wide','slow']:['triple','wide','slow','shield','bonus'];const kind=choices[Math.floor(Math.random()*choices.length)];powerups.push({x:b.x+b.w/2,y:b.y,kind});}
+ function frame(t){if(!run)return;const dt=Math.min(32,t-(lastStamp||t));lastStamp=t;levelElapsed+=dt/1000;elapsed+=dt/1000;clock();if(levelElapsed>=levelDuration){if(level<3){setupStage(level+1);lastStamp=t;document.getElementById('brickStatus').textContent='Bölüm '+level+' başladı! Tempo yükseldi.';raf=requestAnimationFrame(frame);return;}finish('Üç bölüm de tamamlandı! Aferin Sincap 🐿️⭐');playSfx('success');confetti();return;}
+ const speedFactor=[1,1.20,1.28][level-1]+Math.min(.12,levelElapsed/levelDuration*.12);
+ if(left)paddle-=6;if(right)paddle+=6;paddle=Math.max(0,Math.min(480-paddleWidth(),paddle));
+ powerups.forEach(p=>p.y+=2.2*speedFactor);powerups=powerups.filter(p=>p.y<355);powerups=powerups.filter(p=>{if(p.y>=320&&p.y<=345&&p.x>=paddle-8&&p.x<=paddle+paddleWidth()+8){if(p.kind==='triple'){const base=balls[0]||{x:paddle+30,y:300,dx:2,dy:-2,r:7};balls=[...balls,{...base,dx:-Math.abs(base.dx),dy:-Math.abs(base.dy)},{...base,dx:0,dy:-Math.abs(base.dy)}];}else if(p.kind==='wide')effects.wide=true;else if(p.kind==='slow')effects.slowUntil=elapsed+8;else if(p.kind==='shield')effects.shield=true;else score+=50;playSfx('success');labels();return false;}return true;});
+ const slow=effects.slowUntil>elapsed?.72:1;
+ for(const ball of balls){ball.x+=ball.dx*speedFactor*slow;ball.y+=ball.dy*speedFactor*slow;if(ball.x<ball.r||ball.x>480-ball.r)ball.dx*=-1;if(ball.y<ball.r)ball.dy=Math.abs(ball.dy);if(ball.dy>0&&ball.y+ball.r>=330&&ball.y<345&&ball.x>paddle-3&&ball.x<paddle+paddleWidth()+3){ball.dy=-Math.abs(ball.dy);ball.dx+=(ball.x-paddle-paddleWidth()/2)/55;playSfx('hit');}
+ const b=bricks.find(b=>b.on&&ball.x>b.x-7&&ball.x<b.x+b.w+7&&ball.y>b.y-7&&ball.y<b.y+b.h+7);if(b){b.hp--;if(b.hp<=0){b.on=false;score+=10;if(Math.random()<(level===1?0:level===2?.28:.42))dropPower(b);}ball.dy*=-1;labels();playSfx('good');}}
+ balls=balls.filter(b=>b.y<370);if(!balls.length){if(effects.shield){effects.shield=false;balls=[{x:paddle+paddleWidth()/2,y:310,dx:1.8,dy:-2.2,r:7}];}else if(--lives<=0){labels();finish('Kardeşcanların Bitti');return;}else{balls=[{x:paddle+paddleWidth()/2,y:292,dx:1.7+level*.15,dy:-2.0-level*.18,r:7}];}labels();}
+ if(bricks.every(b=>!b.on)){if(level<3){setupStage(level+1);lastStamp=t;document.getElementById('brickStatus').textContent='Bölüm '+level+' tamamlandı. Sıradaki daha zor.';raf=requestAnimationFrame(frame);return;}finish('Üç bölümün tüm tuğlalarını kırdın aferin SİNCAP 🐿️⭐');confetti();playSfx('success');return;}
+ document.getElementById('brickStatus').textContent='Bölüm '+level+'/3 · '+(effects.wide?'Geniş platform ': '')+(effects.shield?'Koruma aktif ':'')+'Güçlendirmeleri yakala CNM';draw();raf=requestAnimationFrame(frame);}
+ document.getElementById('brickStart').onclick=()=>{cancelAnimationFrame(raf);score=0;lives=3;elapsed=0;lastStamp=0;setupStage(1);run=true;raf=requestAnimationFrame(frame);};
+ [['brickLeft','left'],['brickRight','right']].forEach(([id,d])=>{let el=document.getElementById(id);el.onpointerdown=()=>{if(d==='left')left=true;else right=true;};['pointerup','pointerleave','pointercancel'].forEach(ev=>el.addEventListener(ev,()=>{if(d==='left')left=false;else right=false;}));});
+ c.onpointermove=e=>{if(run){let r=c.getBoundingClientRect();paddle=(e.clientX-r.left)/r.width*480-paddleWidth()/2;paddle=Math.max(0,Math.min(480-paddleWidth(),paddle));}};
+ document.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')left=true;if(e.key==='ArrowRight')right=true;});document.addEventListener('keyup',e=>{if(e.key==='ArrowLeft')left=false;if(e.key==='ArrowRight')right=false;});setupStage(1);
+})();;
+(()=>{
+ const c=document.getElementById('runnerCanvas'),x=c.getContext('2d');let lane=1,jump=0,jumpTime=0,obstacles=[],score=0,run=false,last=0,spawn=0,elapsed=0,raf;
+ const TOTAL=200,centers=[160,240,320];
+ function clock(){const remain=Math.max(0,TOTAL-Math.floor(elapsed));document.getElementById('runTime').textContent=String(Math.floor(remain/60)).padStart(2,'0')+':'+String(remain%60).padStart(2,'0');document.getElementById('runLevel').textContent=Math.min(9,5+Math.floor(elapsed/40))+'/9';}
+ function rank(){return score>=150?'Koyun':score>=125?'Amamiya':score>=100?'Yota':score>=50?'Momoka':'—';}
+ function draw(){x.fillStyle='#100b20';x.fillRect(0,0,480,360);x.fillStyle='#211735';x.fillRect(95,0,290,360);x.strokeStyle='#b99be577';x.lineWidth=3;x.setLineDash([18,14]);x.beginPath();x.moveTo(192,0);x.lineTo(192,360);x.moveTo(288,0);x.lineTo(288,360);x.stroke();x.setLineDash([]);x.lineWidth=1;obstacles.forEach(o=>{x.font='30px sans-serif';x.textAlign='center';x.fillText(o.star?'⭐':o.kind==='double'?'🪨':o.kind==='low'?'🪵':'🧱',centers[o.lane],o.y);});x.font='34px sans-serif';x.textAlign='center';x.fillText('🏃',centers[lane],305-jump);x.textAlign='start';}
+ function move(d){lane=Math.max(0,Math.min(2,lane+d));}
+ function end(msg){run=false;document.getElementById('runRank').textContent=rank();document.getElementById('runnerStatus').textContent=msg+' Puan: '+score+(rank()!=='—'?' · '+rank():'');playSfx('bad');}
+ function frame(t){if(!run)return;let dt=Math.min(32,t-(last||t));last=t;elapsed+=dt/1000;clock();if(elapsed>=TOTAL){end('3 dakika 20 saniye tamamlandı harika koştun helal olsun.');playSfx('success');return;}
+ const level=Math.min(9,5+Math.floor(elapsed/40)),speed=1.75+(level-1)*.37,spawnGap=Math.max(510,1450-(level-1)*75);spawn+=dt;
+ if(spawn>=spawnGap){spawn=0;const star=Math.random()<.34;let kind='block';if(level<=3&&Math.random()<.38)kind='low';else if(level>=5&&Math.random()<.22)kind='double';obstacles.push({id:Math.random(),lane:Math.floor(Math.random()*3),y:-25,star,kind,done:false});}
+ obstacles.forEach(o=>o.y+=speed*dt/16);obstacles=obstacles.filter(o=>o.y<390&&!o.done);
+ if(jumpTime>0){jumpTime=Math.max(0,jumpTime-dt/1000);jump=92*Math.sin(Math.PI*(1-jumpTime/0.72));}else jump=0;
+ for(const o of obstacles){if(o.done||o.lane!==lane||o.y<268||o.y>315)continue;if(o.star){o.done=true;score+=5;playSfx('eat');}else if(jump>25){o.done=true;score+=2;playSfx('hit');}else{end('Engele çarptın ha');return;}}
+ document.getElementById('runScore').textContent=score;document.getElementById('runRank').textContent=rank();document.getElementById('runnerStatus').textContent='Seviye '+level+'/9 · '+(level>=8?'Final seviyeleri':'Yıldızları topla, engellerden kaç lütfen.');draw();raf=requestAnimationFrame(frame);}
+ function start(){lane=1;jump=0;jumpTime=0;obstacles=[];score=0;spawn=0;last=0;elapsed=0;run=true;cancelAnimationFrame(raf);document.getElementById('runScore').textContent=0;document.getElementById('runRank').textContent='—';clock();document.getElementById('runnerStatus').textContent='Koşmaya başladın';raf=requestAnimationFrame(frame);}
+ document.getElementById('runnerStart').onclick=start;document.getElementById('runLeft').onclick=()=>move(-1);document.getElementById('runRight').onclick=()=>move(1);document.getElementById('runJump').onclick=()=>{if(run&&jumpTime<=0){jumpTime=0.72;playSfx('hit');}};document.addEventListener('keydown',e=>{if(!run)return;if(['ArrowLeft','ArrowRight','ArrowUp',' '].includes(e.key))e.preventDefault();if(e.key==='ArrowLeft')move(-1);if(e.key==='ArrowRight')move(1);if((e.key==='ArrowUp'||e.key===' ')&&jumpTime<=0){jumpTime=0.72;playSfx('hit');}});clock();draw();
+})();;
+
+newMemory();
+</script>
+</body></html>
