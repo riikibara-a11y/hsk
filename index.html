@@ -76,7 +76,7 @@ section{width:min(1000px,calc(100% - 32px));margin:0 auto 34px;padding:clamp(22p
 </main>
 <script>
 // Dilek formu varsayılan olarak yalnızca ekranda gösterilir. E-posta gönderimi için Formspree endpoint'ini buraya ekle: const FORM_ENDPOINT = "https://formspree.io/f/FORM_KODUN";
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://formspree.io/forms/xzeeovvb/integration";
 let balloonTimer=null,spawnTimer=null,score=0,timeLeft=30,playing=false,spawnDelay=650,balloonStartedAt=0;
 function scheduleBalloon(){if(!playing)return;const elapsed=(Date.now()-balloonStartedAt)/1000;const phase=Math.floor(elapsed/7.5);spawnDelay=Math.max(300,650-phase*100);spawnTimer=setTimeout(()=>{if(!playing)return;spawnBalloon();scheduleBalloon();},spawnDelay)}
 function startBalloons(){if(playing)return;playing=true;score=0;timeLeft=30;spawnDelay=650;balloonStartedAt=Date.now();document.getElementById('score').textContent=0;document.getElementById('time').textContent=30;document.getElementById('balloonResult').textContent='Hazır ol, balonlar geliyor valla';const field=document.getElementById('balloonField');field.innerHTML='';document.getElementById('startBalloons').disabled=true;spawnBalloon();scheduleBalloon();balloonTimer=setInterval(()=>{timeLeft--;document.getElementById('time').textContent=timeLeft;if(timeLeft<=0){clearInterval(balloonTimer);clearTimeout(spawnTimer);playing=false;field.innerHTML='<span class="small">Oyun Tamamlandı 🎉</span>';document.getElementById('startBalloons').disabled=false;const rank=score>=30?'Usta 🧑🏽':score>=20?'Sincap 🐿️':score>=10?'İnek 🐄':'Biraz daha pratik yap benca 💫';document.getElementById('balloonResult').textContent=score+' balon yakaladın. '+rank;confettiIf(score>=20)}},1000)}
